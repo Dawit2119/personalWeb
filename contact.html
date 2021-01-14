@@ -1,130 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dawit Teklu</title>
-    <link rel="icon" type="image/png" href="images/myImage.png">
-</head>
-<body>
-    <table border="0" cellspacing="10" width="100%">
-        <tr>
-            <td>
-                <table width="80%" cellspacing="10" cellpadding="10" border="0" align="center" bgcolor="#dae0f0">
-                    <tr>
-                        <td height="30" colspan="2">
-                            
-                        </td>
-                    </tr>
-<!-- Title start -->
-                    <tr>
-                        <td align="center"  height="30" colspan="2">
-                            <h1>Dawit Teklu</h1>
-                        </td>
-                    </tr>
-<!-- Title end -->
-<!-- navigation start -->
-    <tr>
-    <td align="center" height="10" colspan="2" >
-        <table border="0" bgcolor="#7a6d76" width="100%">
-            <tr>
-                <td>
-                    <table cellspacing="10" border="0" align="center">
-                        <tr>
-                            <td>
-                                <a href="index.html"><h3>Home</h3></a>
-                            </td>
-                            <td>
-                               <a href="blog.html"><h3>Blog</h3></a> 
-                            </td>
-                            <td>
-                                <a href="conatactMe.html">                                        <h3>Contact</h3></a>
-                            </td>
-                            <td>
-                                <a href="gallery.html">                                        <h3>Gallery</h3></a>
-                            </td>
-                            <td>
-                                <a href="hireMe.html">                                        <h3>
-                                    Hire me
-                                </h3></a>
-                            </td>
-                
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-
-     </td>
-    </tr>
-<!-- navigation end -->
-<!-- conatact me start  -->
-    <tr>
-        <td colspan="2">
-            <table align="center" cellspacing="20" bgcolor="#9c6764" >
-                <tr>
-                    <td align="center" colspan="2">
-                        <h2> <u>Contact us</u> </h2>
-                        <h4>Please fill the informations correctly.</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        First Name:
-                    </td>
-                    <td>
-                        <input type="text" size="25"
-                        pattern="[a-zA-Z]{2,}"
-                        title="letters more than one"
-                        required
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Second Name:
-                    </td>
-                    <td>
-                        <input type="text" size="25"
-                        pattern="[a-zA-z]{2,}"
-                        title="must include letters more than one"
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Email:
-                    </td>
-                    <td>
-                        <input type="email" size="25">
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                        Password:
-                    </td>
-                    <td>
-                        <input type="password" size="25" 
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Must includes at leaset one uppercase letter, one lower case letter and one number"
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        P.O.Box:
-                    </td>
-                    <td>
-                        <input type="text" pattern="[\d]{4}" size="25" title="Enter four digit p.o.box number">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Country:
-                    </td>
-                    <td>
-                        <select id="country" name="country">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dawit Teklu</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/styleIcons.css
+        ">
+        <script src="https://kit.fontawesome.com/0c3ed5c5e4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div class="container pt-3 my-3" style="background-color:rgb(180, 209, 209)">
+            <h1 style="text-align: center;" class="pt-3 my-3"> Dawit Teklu</h1><br><br>
+            <nav class="navbar navbar-expand-md  justify-content-center  navbar-dark   my-3 pt-3">
+                <button class="navbar-toggler"  type="button" data-toggle="collapse"
+                data-target="#collapsibleNav">
+                <span class="navbar-toggler-icon">
+        
+                </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNav">
+                    <ul class="navbar-nav justify-content-center bg-secondary">
+                        <li class="nav-item"><a href="index.html"class="nav-link active"><h3>Home</h3></a></li>
+                        <li class="nav-item"><a href="blogs.html" class="nav-link"><h3>Blog</h3></a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link"><h3>Contact</h3></a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link"><h3>Gallery</h3></a></li>
+                        <li class="nav-item"><a href="hireMe.html" class="nav-link"><h3>Hire me</h3></a></li>
+                    </ul>
+                </div>
+            </nav>
+       </div>
+     <div class="container pt-3 my-3">
+            <h2 style="text-align:center">
+            Contact us</h2>
+            <p style="text-align: center;">Please fill the informations correctly. </p>
+            <form action="mail-to:se.dawit.teklu@gmail.con">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="inputOne"><h3>First Name: </h3></label></div>
+                    <div class="col"><input type="text"  id="inputOne"class="form-control" placeholder="first name" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="inputTwo"><h3>Second name:</h3></label></div>
+                    <div class="col"><input type="text" id="inputTwo" class="form-control" placeholder="second name" required></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="inputThree"><h3>Email:</h3></label></div>
+                    <div class="col"><input type="email" class="form-control" id="inputThree"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="password"><h3>Password:</h3></label></div>
+                    <div class="col"><input type="password" class="form-control"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="pobox"><h3>P.O.Box:</h3></label></div>
+                    <div class="col"><input type="number" class="form-control"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="country"><h3>Country:</h3></label></div>
+                    <div class="col" >
+                        <select name="country" id="country" class="form-control">
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
                             <option value="Algeria">Algeria</option>
@@ -371,60 +314,40 @@
                             <option value="Zaire">Zaire</option>
                             <option value="Zambia">Zambia</option>
                             <option value="Zimbabwe">Zimbabwe</option>
-                         </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Phone:
-                    </td>
-                    <td>
-                        <input type="text"
-                        pattern="[\d]{10}"
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gender:
-                    </td>
-                    <td>
-                        Male<input type="radio" name="gender" value="Male" size="25">
-                        Female<input type="radio"  name="gender" value="Female" size="25">
-                        Not determind<input type="radio" name="gender" value="Not determind" size="25">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        &nbsp;
-                    </td>
-                    <td>
-                        <button type="submit"><h3>
-                            Submit!
-                        </h3></button>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-<!-- contact me end -->
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="phone"><h3>Phone:</h3></label></div>
+                    <div class="col"><input type="number" class="form-control"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4"><label for="gender"><h3>Sex:</h3></label></div>
+                    <div class="col">
+                        <div class="radio-group">
+                            <label for="radioOne">Male</label> 
+                            <input type="radio" id="radioOne" name="radio"> 
+                            <label for="radioOne">Female</label> 
+                            <input type="radio" id="radioOne" name="radio"> 
+                            <label for="radioOne">Undetermind</label> 
+                            <input type="radio" id="radioOne" name="radio">                         
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3 my-3">
+                    <div class="col-4"></div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary"><h3>Submit</h3></button>
 
-                    </table>
-<!-- footer page started -->
-        <tr>
-            <td>
-                <table width="80%" align="center" border="0" bgcolor="#dae0f0">
-                    <tr>
-                        <td>
-                            <h3>
-                                Copyright &copy;2020 <strong>Dawit Teklu.</strong> All rights Reserved.
-                            </h3>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-<!-- footer page end -->
-    </table>
-    </body>
+                    </div>
+                </div>
+            </form>
+    </div>
+    <div class="container pt-3 my-3">
+        <p><strong>All right are reserved &copy; 2021</strong></p>
+    </div>
+
+</body>
 </html>
