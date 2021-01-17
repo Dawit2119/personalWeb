@@ -6,12 +6,8 @@
     <title>Dawit Teklu</title>
     <link rel="shortcut icon" href="assets/images/myImage.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/styleIcons.css
     ">
-    <script src="https://kit.fontawesome.com/0c3ed5c5e4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@100&family=Potta+One&family=Raleway:ital,wght@1,200&family=Roboto+Condensed:wght@300;700&family=Source+Sans+Pro:wght@900&family=Yusei+Magic&display=swap" rel="stylesheet">
     <style>
@@ -25,7 +21,7 @@ p{font-family: 'Yusei Magic', sans-serif;}
 <body>
    <div class="container pt-3 my-3" style="background-color:rgba(255, 255, 255, 0.918)">
         <h1 style="text-align: center;color: rgb(58, 18, 122);" class="pt-3 my-3"> Dawit Teklu</h1><br><br>
-        <nav class="navbar navbar-expand-md navbar-fixed-top justify-content-center  navbar-dark   my-3 pt-3" style="width: 100%;background-color: rgb(58, 18, 122);">
+        <nav class="navbar navbar-expand-md justify-content-center  navbar-dark   my-3 pt-3" id="navbar_top" style="width: 100%;background-color: rgb(58, 18, 122);">
           <button class="navbar-toggler"  type="button" data-toggle="collapse"
           data-target="#collapsibleNav">
           <span class="navbar-toggler-icon">
@@ -176,9 +172,36 @@ p{font-family: 'Yusei Magic', sans-serif;}
  
          </div>
     </div>
+    <span>back to top
+      <a  href="#" id="back_to_top">
+          <span class="button_icon">
+              <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+      </a>
+  </span>
    </div>
    <div class="container pt-3 my-3">
      <p>Copyright &copy; 2021 <strong>Dawit Teklu</strong> All rights Reserved.</p>
 </div>
+<script src="https://kit.fontawesome.com/0c3ed5c5e4.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(window).scroll(function(){  
+       if ($(this).scrollTop() > 40) {
+          $('#navbar_top').addClass("fixed-top");
+          // add padding top to show content behind navbar
+
+          $('#navbar_top').css('position', 'sticky');
+
+
+        }else{
+          $('#navbar_top').removeClass("fixed-top");
+        }   
+    });
+    
+</script>
 </body>
 </html>
